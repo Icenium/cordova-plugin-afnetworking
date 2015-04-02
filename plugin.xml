@@ -3,21 +3,15 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.telerik.AFNetworking"
 	version="2.5.2">
-
 	<name>Telerik AFNetworking Cordova Plugin</name>
 	<description>This plugin adds AFNetworking functionality</description>
 	<license>Commercial</license>
 	<keywords>cordova,device</keywords>
-	<preference name="AppToken"/>
-	<preference name="Host"/>
-	
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
 	</engines>
-
 	<platform name="ios">
         <framework src="src/ios/AFNetworking.framework" weak="false" custom="true"/>
         <framework src="Foundation.framework" weak="true" />
 	</platform>
-
 </plugin>
