@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="com.telerik.AFNetworking"
+	id="com.telerik.afnetworking"
 	version="2.5.2">
 	<name>Telerik AFNetworking Cordova Plugin</name>
-	<description>This plugin adds AFNetworking functionality</description>
-	<license>Commercial</license>
+	<description>This plugin adds the AFNetworking library for iOS</description>
+	<license>MIT</license>
 	<keywords>cordova,device</keywords>
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
