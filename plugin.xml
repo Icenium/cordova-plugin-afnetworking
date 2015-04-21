@@ -13,7 +13,7 @@
 	<platform name="ios">
         <framework src="src/ios/AFNetworking.framework" custom="true"/>
         <framework src="Foundation.framework" weak="true" />
-        <framework src="CFNetworking.framework" />
+        <framework src="CFNetwork.framework" />
         <framework src="Security.framework" />
         <framework src="SystemConfiguration.framework" />
 	</platform>
