@@ -11,7 +11,10 @@
 		<engine name="cordova" version=">=3.0.0" />
 	</engines>
 	<platform name="ios">
-        <framework src="src/ios/AFNetworking.framework" weak="false" custom="true"/>
+        <framework src="src/ios/AFNetworking.framework" custom="true"/>
         <framework src="Foundation.framework" weak="true" />
+        <framework src="CFNetworking.framework" />
+        <framework src="Security.framework" />
+        <framework src="SystemConfiguration.framework" />
 	</platform>
 </plugin>
