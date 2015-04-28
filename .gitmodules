@@ -1,0 +1,3 @@
+[submodule "afnetworking"]
+	path = afnetworking
+	url = git@github.com:Icenium/AFNetworking.git
