@@ -279,14 +279,13 @@ static inline void af_addMethod(Class class, SEL selector, Method method) {
 static NSString * const AFNSURLSessionTaskDidResumeNotification  = @"com.alamofire.networking.nsurlsessiontask.resume";
 static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofire.networking.nsurlsessiontask.suspend";
 
-@interface NSURLSessionDataTask (_AFStateObserving)
+@interface NSURLSessionTask (_AFStateObserving)
 @end
 
-@implementation NSURLSessionDataTask (_AFStateObserving)
+@implementation NSURLSessionTask (_AFStateObserving)
 
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
++ (void)initialize {
+    if ([NSURLSessionTask class]) {
         NSURLSessionDataTask *dataTask = [[NSURLSession sessionWithConfiguration:nil] dataTaskWithURL:nil];
         Class taskClass = [dataTask superclass];
 
@@ -296,7 +295,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
         af_swizzleSelector(taskClass, @selector(suspend), @selector(af_suspend));
 
         [dataTask cancel];
-    });
+    }
 }
 
 #pragma mark -
