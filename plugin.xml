@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="cordova-plugin-afnetworking"
-	version="2.5.2">
+	version="3.1.0">
 	<name>AFNetworking Cordova Plugin</name>
 	<description>This plugin adds the AFNetworking library for iOS</description>
 	<license>MIT</license>
